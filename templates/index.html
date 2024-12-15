@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Códigos QR</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <form action="/generate" method="POST">
+        <h1>Generador codis QR</h1>
+        <input type="text" name="nombre" placeholder="Nombre del Paciente" required>
+        <input type="number" name="edad" placeholder="Edad" required>
+        <input type="text" name="diagnostico" placeholder="Diagnóstico" required>
+        <input type="text" name="seguridad_social" placeholder="Número de Seguridad Social" required>
+        <input type="email" name="correo" placeholder="Correo Electrónico" required>
+        <input type="text" name="dni" placeholder="DNI" required>
+        <button type="submit">Generar Codi QR</button>
+    </form>
+
+    <div class="buttons-container">
+        <a href="/pacientes">
+            <button class="blue-button">Veure pacients</button>
+        </a>
+        <a href="/about">
+            <button class="red-button">Fer diagnòstic metge</button>
+        </a>
+    </div>
+</body>
+</html>

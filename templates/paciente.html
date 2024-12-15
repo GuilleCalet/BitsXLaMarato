@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacientes</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <style>
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .patient-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .patient-card img {
+            height: 100px;
+            width: 100px;
+            border-radius: 8px;
+        }
+
+        .patient-details {
+            flex-grow: 1;
+            text-align: left;
+            margin-left: 15px;
+        }
+
+        .patient-details h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .patient-details p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Pacientes</h1>
+        {% for paciente in pacientes %}
+        <div class="patient-card">
+            <img src="{{ paciente[3] }}" alt="Código QR">
+            <div class="patient-details">
+                <h3>{{ paciente[1] }}</h3>
+                <p><strong>DNI:</strong> {{ paciente[0] }}</p>
+                <p><strong>Diagnóstico:</strong> {{ paciente[2] }}</p>
+            </div>
+        </div>
+        {% endfor %}
+        <a href="/" class="red-button">Volver</a>
+    </div>
+</body>
+</html>

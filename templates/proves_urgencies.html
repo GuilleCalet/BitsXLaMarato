@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proves a Realitzar</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <style>
+        /* Justificación general */
+        .steps-list {
+            text-align: justify; /* Justifica el texto */
+            margin: 0 auto;
+            padding: 0;
+            max-width: 600px;
+            line-height: 1.6;
+            list-style-type: none; /* Elimina los puntos por defecto */
+        }
+
+        .steps-list li {
+            margin-bottom: 10px;
+        }
+
+        /* Subapartados con tabulación */
+        .tabbed {
+            display: block;
+            margin-left: 30px; /* Sangría */
+        }
+
+        /* Estilo del botón */
+        .arrow-button {
+            background-color: #2196F3; /* Azul */
+            color: white;
+            padding: 5px 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .arrow-button:hover {
+            background-color: #1976D2; /* Azul más oscuro */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Proves a Realitzar</h1>
+        <ul class="steps-list">
+            {% for paso in pasos %}
+            <li>
+                {% if paso.startswith("   ") %}
+                    <span class="tabbed">{{ paso.strip() }}</span>
+                {% elif "Radiografía de tórax" in paso %}
+                    {{ paso }}
+                    <button onclick="location.href='/radiografia_torax'" class="arrow-button">
+                        Si infiltrats i sospita de neumònia →
+                    </button>
+                {% else %}
+                    {{ paso }}
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="/about" class="red-button">Volver</a>
+    </div>
+</body>
+</html>

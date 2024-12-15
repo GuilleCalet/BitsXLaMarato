@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dx NO Concret</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <style>
+        /* Contenedor principal */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Caja principal */
+        .main-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            border: 2px solid #64b5f6;
+            background-color: #e3f2fd;
+            border-radius: 8px;
+            font-weight: bold;
+            color: #0d47a1;
+            margin-bottom: 20px;
+            width: 250px;
+            text-align: center;
+        }
+
+        /* Flechas */
+        .arrows {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .arrow {
+            font-size: 30px;
+            color: #333;
+        }
+
+        /* Cajas izquierda y derecha */
+        .left-box, .right-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+        }
+
+        .tep-box {
+            background-color: #FFCDD2;
+            border: 2px solid #E57373;
+            color: #B71C1C;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .sub-box {
+            background-color: #C8E6C9;
+            border: 2px solid #81C784;
+            color: #2E7D32;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .line {
+            height: 30px;
+            border-left: 2px solid #333;
+            margin: 5px 0;
+        }
+
+        /* Botón volver */
+        .red-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #d32f2f;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .red-button:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Caja principal -->
+        <div class="main-box">ANGIO-TACAR + D-Dímer (si sospita TEP)</div>
+        <!-- Flechas hacia izquierda y derecha -->
+        <div class="arrows">
+            <!-- Flecha izquierda -->
+            <div class="left-box">
+                <div class="arrow">←</div>
+                <div class="tep-box">NO TEP</div>
+                <div class="line"></div>
+                <div class="sub-box">Valoració parènquima</div>
+            </div>
+            <!-- Flecha derecha -->
+            <div class="right-box">
+                <div class="arrow">→</div>
+                <div class="tep-box">TEP</div>
+            </div>
+        </div>
+        <a href="/valoracion_nml_guardia" class="red-button">Volver</a>
+        <a href="/dx_concret_no_pneumonia" class="green-button">Tractament</a>
+    </div>
+</body>
+</html>

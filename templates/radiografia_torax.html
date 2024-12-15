@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas Adicionales</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <style>
+        .steps-list {
+            text-align: justify;
+            margin: 0 auto;
+            padding: 0;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .steps-list li {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .red-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #f44336;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .red-button:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pruebas Adicionales</h1>
+        <ul class="steps-list">
+            {% for prueba in pruebas %}
+            <li>{{ prueba }}</li>
+            {% endfor %}
+        </ul>
+        <a href="/valoracion_urgencias" class="red-button">Volver</a>
+    </div>
+</body>
+</html>

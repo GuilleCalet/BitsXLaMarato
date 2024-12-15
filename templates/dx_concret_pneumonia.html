@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dx Concret Pneumonia</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <style>
+        /* Contenedor principal */
+        .container {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Títulos principales */
+        h1 {
+            color: #d32f2f;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #ff9800;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        /* Bloques de contenido */
+        .block {
+            border: 2px solid #ffcc80;
+            background-color: #fff3e0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .highlight {
+            color: #d32f2f;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            background-color: #c8e6c9;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dx Concret Pneumònia</h1>
+
+        <!-- IMMUNOSUPRIMIT -->
+        <h2>IMMUNOSUPRIMIT</h2>
+        <div class="block">
+            <p class="subtitle">Si PCR (+) a <i>Virus Influenza</i></p>
+            <p><span class="highlight">Piperacilina/Tazobactam</span> 4g/0.5g/8h e.v. (o <span class="highlight">cefalosporina 3ª generació</span> + <span class="highlight">Levofloxacino</span> 500mg/24h v.o.)</p>
+        </div>
+        <div class="block">
+            <p class="subtitle">Si sospita <i>CMV</i></p>
+            <p><span class="highlight">Ganciclovir</span> 5mg/Kg pes/12h e.v.</p>
+        </div>
+        <div class="block">
+            <p class="subtitle">Si sospita <i>Ph. jiroveci</i></p>
+            <p><span class="highlight">Sulfametoxazol/Trimetoprim</span> 800/160mg/12h e.v. + <span class="highlight">Àc. Fòlic</span></p>
+        </div>
+
+        <!-- IMMUNOCOMPETENT -->
+        <h2>IMMUNOCOMPETENT</h2>
+        <div class="block">
+            <p class="subtitle">Si PCR (+) a <i>Virus Influenza</i></p>
+            <p><span class="highlight">Oseltamivir</span> 75mg/12h v.o.</p>
+        </div>
+        <div class="block">
+            <p><span class="highlight">Cefalosporina 3ªG</span> + <span class="highlight">Levofloxacino</span> 500mg/24h v.o.</p>
+        </div>
+
+        <a href="/dx_concret_no_pneumonia" class="green-button">Tractament</a>
+        <a href="/valoracion_nml_guardia" class="red-button">Volver</a>
+    </div>
+</body>
+</html>
