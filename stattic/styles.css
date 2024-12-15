@@ -1,1 +1,353 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d3d3d3; /* Gris claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+/* Encabezado */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo del formulario */
+form {
+    display: flex;
+    flex-direction: column; /* Colocar los elementos en columna */
+    align-items: center; /* Centrar los elementos */
+    gap: 15px; /* Espaciado entre elementos */
+    background-color: white; /* Fondo blanco para el formulario */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+/* Campos de entrada */
+form input {
+    padding: 10px;
+    width: 300px; /* Ancho fijo */
+    max-width: 80%;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px;
+}
+
+/* Botón de "Generar Código QR" */
+form button {
+    padding: 10px 20px;
+    background-color: #32cd32; /* Verde chillón */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #28a828; /* Verde ligeramente más oscuro al pasar el mouse */
+}
+
+/* Contenedor de botones secundarios */
+.buttons-container {
+    display: flex;
+    justify-content: center; /* Centrar botones */
+    gap: 25px; /* Espaciado entre botones */
+    margin-top: 25px;
+}
+
+/* Botón azul */
+.blue-button {
+    background-color: #2196F3; /* Azul */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.blue-button:hover {
+    background-color: #1976D2; /* Azul más oscuro */
+}
+
+/* Botón rojo */
+.red-button {
+    background-color: #f44336; /* Rojo */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.red-button:hover {
+    background-color: #d32f2f; /* Rojo más oscuro */
+}
+/* Estilo para la página de QR */
+.qr-container {
+    text-align: center;
+    background-color: white; /* Fondo blanco para destacar */
+    padding: 30px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    max-width: 400px; /* Ancho máximo para mejor diseño en móviles */
+    width: 90%; /* Ancho adaptativo */
+}
+
+/* Título de la página */
+.qr-container h1 {
+    color: #4a4a4a; /* Gris oscuro */
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Texto descriptivo */
+.qr-container p {
+    font-size: 18px;
+    color: #666; /* Gris medio */
+    margin-bottom: 30px;
+    line-height: 1.6; /* Mejor legibilidad */
+}
+
+/* Estilo de la imagen del QR */
+.qr-container img {
+    max-width: 250px; /* Ajusta la imagen del QR */
+    width: 100%; /* Asegura que sea responsive */
+    border: 2px solid #4a4a4a; /* Borde gris oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 20px;
+}
+
+/* Botón de regreso */
+.qr-container a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 25px;
+    background-color: #2196F3; /* Azul primario */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.qr-container a:hover {
+    background-color: #1976D2; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Contenedor general */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Título */
+.container h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Lista de pacientes */
+.container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container li {
+    background-color: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Botón */
+.blue-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #2196F3;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.blue-button:hover {
+    background-color: #1976D2;
+}
+/* Botón verde para "Valoració Urgències" */
+.green-button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.green-button:hover {
+    background-color: #388E3C; /* Verde más oscuro */
+}
+
+/* Botón amarillo para "Valoració NML Guàrdia" */
+.yellow-button {
+    background-color: #FFC107; /* Amarillo */
+    color: #333; /* Texto oscuro para contraste */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.yellow-button:hover {
+    background-color: #FFA000; /* Amarillo más oscuro */
+}
+
+/* Ajustes para contenedor de botones */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* Espaciado entre botones */
+.buttons-container .green-button,
+.buttons-container .yellow-button {
+    flex: 1;
+    max-width: 200px; /* Ajusta el ancho de los botones */
+}
+/* Contenedor para la lista de pasos */
+.steps-list {
+    list-style-type: decimal; /* Números en la lista */
+    margin: 20px auto;
+    padding: 0;
+    max-width: 600px;
+    background-color: #fff; /* Fondo blanco */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Elementos individuales de la lista */
+.steps-list li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333; /* Gris oscuro */
+    line-height: 1.6;
+}
+
+/* Título */
+.container h1 {
+    margin-bottom: 20px;
+    color: #2196F3; /* Azul para resaltar */
+}
+.arrow-button {
+    background-color: #2196F3; /* Azul */
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.arrow-button:hover {
+    background-color: #1976D2; /* Azul más oscuro */
+}
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.blue-button {
+    background-color: #2196F3; /* Azul */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.blue-button:hover {
+    background-color: #1976D2;
+}
+
+.green-button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.green-button:hover {
+    background-color: #388E3C;
+}
+
+.yellow-button {
+    background-color: #FFC107; /* Amarillo */
+    color: #333;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.yellow-button:hover {
+    background-color: #FFA000;
+}
+
+.red-button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+.red-button:hover {
+    background-color: #d32f2f;
+}
 
